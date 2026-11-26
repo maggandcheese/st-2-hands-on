@@ -1,0 +1,129 @@
+<html> 
+    <head>
+        <title> </title>
+        <style>
+    body {
+        text-align: center;
+        background-color: #ffedd0;
+    }
+    
+    .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 1,000px;
+    }
+
+
+    .video-container video {
+        width: 100%;
+        display: block;
+    }
+
+    .overlay-text h1 {
+        position: absolute;
+        font-size:140px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centers the text */
+        text-shadow: 4px 4px 10px #F7A5A5;
+        color: #1A2A4F;
+        text-align: center;
+        z-index: 1;
+    }
+    .overlay-text h2 {
+        position: absolute;
+        font-size:60px;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centers the text */
+        text-shadow: 4px 4px 10px #F7A5A5;
+        color: #1A2A4F;
+        text-align: center;
+        z-index: 1;
+    }
+    		
+h3 {
+display: block;
+background-color: #FFDDDD;
+padding:20px 60px;
+color: #1A2A4F;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+border: 5px dashed #1A2A4F;
+text-align: center;
+}
+h4 {
+display: block;
+background-color: #FFDDDD;
+padding:20px 60px;
+color: #1A2A4F;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+border: 5px dashed #1A2A4F;
+text-align: center;
+}
+img {
+width: 700px;
+height: 400px;
+border: 5px solid #1A2A4F;
+border-radius: 15px;
+box-shadow: 4px 4px 8px #719b94;
+/* Smooth effect */
+transition: 0.5s;
+/* Default filter */
+filter: none;
+}
+/* Zoom when hovering */
+img:hover {
+transform: scale(1.05);
+}
+button {
+padding: 15px 30px;
+margin: 5px;
+cursor: pointer;
+background-color: #FFDDDD;
+color: #1A2A4F;
+border: none;
+border-radius: 5px;
+box-shadow: 4px 4px 8px #1A2A4F;
+}
+button:hover {
+background-color: #eedcc4;
+}
+        </style>
+    </head>
+    <body>
+<div class="video-container">
+    <video autoplay muted loop playsinline>
+        <source src="philbeach.mp4" type="video/mp4">
+    </video>
+    <div class="overlay-text">
+        <h1> Welcome to the Philippines!</h1>
+        <h2> a country like no other</h2>
+    </div>
+</div>
+<h3> Mabuhay! Looking for your next unforgettable getaway? Philippines, a tropical paradise of over 7,640 sun-drenched islands in the heart of Southeast Asia. Crystal-clear waters waiting to be dived into, mountain peaks famous for its sea of clouds waiting to be hiked — every corner of this archipelago offers a breathtaking new adventure to explore. Beyond its natural wonders, what truly makes Philippines a country like no other is the genuine warmth and hospitality of its people, always ready to greet other people with an open heart and a warm smile. Your true island adventure starts here! 
+</h3>
+<script>
+document.writeln("<br><br>");
+
+document.writeln("<h4> DESTINATIONS </h4>");
+document.writeln("<img id='gallery' src='coveren.jpg'>");
+document.writeln("<br><br>");
+document.writeln("<button onclick=\"document.getElementById('gallery').src='elnido.jpg'\">EL NIDO</button>");
+document.writeln("<button onclick=\"document.getElementById('gallery').src='bora.jpg'\">BORACAY</button>");
+document.writeln("<button onclick=\"document.getElementById('gallery').src='baguio.jpg'\">BAGUIO</button>");
+document.writeln("<button onclick=\"document.getElementById('gallery').src='bohol.jpg'\">BOHOL</button>");
+</script>
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
